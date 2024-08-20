@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express-React Template Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to your CSS file -->
+
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav style="background-color: #333; padding: 1rem">
+      <ul
+        style="
+          display: flex;
+          list-style-type: none;
+          justify-content: space-around;
+          margin: 0;
+          padding: 0;
+        "
+      >
+        <li>
+          <a href="#overview" style="color: white; text-decoration: none"
+            >Project Overview</a
+          >
+        </li>
+        <li>
+          <a href="#setup" style="color: white; text-decoration: none"
+            >Setup and Installation</a
+          >
+        </li>
+        <li>
+          <a href="#frontend" style="color: white; text-decoration: none"
+            >Frontend Development</a
+          >
+        </li>
+        <li>
+          <a href="#backend" style="color: white; text-decoration: none"
+            >Backend Development</a
+          >
+        </li>
+        <li>
+          <a href="#dockerization" style="color: white; text-decoration: none"
+            >Dockerization</a
+          >
+        </li>
+        <li>
+          <a href="#deployment" style="color: white; text-decoration: none"
+            >Deployment</a
+          >
+        </li>
+        <li>
+          <a href="#configuration" style="color: white; text-decoration: none"
+            >Configuration and Environment Variables</a
+          >
+        </li>
+        <li>
+          <a href="#troubleshooting" style="color: white; text-decoration: none"
+            >Troubleshooting</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Project Overview Section -->
+    <section id="overview">
+      <h1>Project Overview</h1>
+      <p>
+        This project is a full-stack application consisting of a React frontend
+        and an Express backend, dockerized for development and production use.
+      </p>
+    </section>
+
+    <!-- Setup and Installation Section -->
+    <section id="setup">
+      <h2>Setup and Installation</h2>
+      <h3>Frontend Setup</h3>
+      <ol>
+        <li>Navigate to the Frontend Directory: <code>cd frontend</code></li>
+        <li>Install Dependencies: <code>npm install</code></li>
+        <li>Run the Development Server: <code>npm start</code></li>
+        <li>Build for Production: <code>npm run build</code></li>
+      </ol>
+      <h3>Backend Setup</h3>
+      <ol>
+        <li>Navigate to the Backend Directory: <code>cd backend</code></li>
+        <li>Install Dependencies: <code>npm install</code></li>
+        <li>Run the Development Server: <code>npm run dev</code></li>
+      </ol>
+    </section>
+
+    <!-- Frontend Development Section -->
+    <section id="frontend">
+      <h2>Frontend Development</h2>
+      <p>
+        The frontend is built using React, Tailwind CSS, and Axios. Key files
+        include <code>src/App.js</code> and <code>tailwind.config.js</code>.
+      </p>
+      <p>
+        Dark mode toggle is implemented via a state variable in
+        <code>App.js</code>.
+      </p>
+    </section>
+
+    <!-- Backend Development Section -->
+    <section id="backend">
+      <h2>Backend Development</h2>
+      <p>
+        The backend is built using Express, CORS, Dotenv, and Cross-Env. Key
+        files include <code>app.js</code> and <code>routes/api.js</code>.
+      </p>
+      <p>Environment variables are stored in a <code>.env</code> file.</p>
+    </section>
+
+    <!-- Dockerization Section -->
+    <section id="dockerization">
+      <h2>Dockerization</h2>
+      <p>
+        The application is dockerized using separate Dockerfiles for the
+        frontend and backend, and a Docker Compose file for multi-container
+        deployment.
+      </p>
+    </section>
+
+    <!-- Deployment Section -->
+    <section id="deployment">
+      <h2>Deployment</h2>
+      <p>
+        To deploy the application, use Docker Compose with the command:
+        <code>docker-compose up --build</code>.
+      </p>
+      <p>
+        Useful Docker commands include <code>docker-compose build</code> and
+        <code>docker-compose down</code>.
+      </p>
+    </section>
+
+    <!-- Configuration and Environment Variables Section -->
+    <section id="configuration">
+      <h2>Configuration and Environment Variables</h2>
+      <p>
+        Frontend environment variables are set using
+        <code>REACT_APP_BACK_END_URL</code>.
+      </p>
+      <p>
+        Backend environment variables are managed in a <code>.env</code> file.
+      </p>
+    </section>
+
+    <!-- Troubleshooting Section -->
+    <section id="troubleshooting">
+      <h2>Troubleshooting</h2>
+      <p>
+        Common issues include port conflicts, dependency errors, and Docker
+        issues. Use commands like
+        <code>docker logs &lt;container_id&gt;</code> for debugging.
+      </p>
+    </section>
+  </body>
+</html>
